@@ -1,0 +1,15 @@
+# Build outputs
+build/
+*.o
+*.obj
+*.exe
+*.out
+*.app
+
+# IDE
+.vscode/
+.wpscomate/
+.vs/
+*.swp
+*.swo
+*~
