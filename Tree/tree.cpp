@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 using namespace std;
 struct bioTreeNode{
     int val;
@@ -7,14 +8,18 @@ struct bioTreeNode{
     bioTreeNode(int v):val(v),left(nullptr),right(nullptr){};
     bioTreeNode(int v,bioTreeNode* l,bioTreeNode* r):val(v),left(l),right(r){};
     ~bioTreeNode();
-    bioTreeNode* initBioTree();
+    bioTreeNode* initBioTree(int* arr[]);
     void preOrderTra(bioTreeNode* root);
     void midOrderTra(bioTreeNode* root);
     void lastOrderTra(bioTreeNode* root);
 };
 
-bioTreeNode* initBioTree(){
-    return nullptr;
+bioTreeNode* initBioTree(int arr[]){
+    int s=arr.size();
+    for(int i=0;i<s;i++){
+        
+    }
+    bioTreeNode* root=new bioTreeNode(arr[0]);
 }
 void preOrderTra(bioTreeNode* root){
     if(root==nullptr)return;
